@@ -7,7 +7,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full bg-white z-10 shadow-md py-4">
       <nav className="flex items-center justify-between px-4">
         {/* ロゴ */}
-        <div className="text-3xl font-bold text-green-600">
+        <Link href="/" className="text-3xl font-bold text-green-600">
           <Image
             src="/2024-election.webp"
             alt="Header Logo"
@@ -15,19 +15,13 @@ const Header = () => {
             height={300}
             className="mr-4"
           />
-        </div>
+        </Link>
 
         {/* ナビメニュー */}
         <div className="flex items-center space-x-8">
-          <Link
-            href="/overview"
-            className="text-lg font-semibold hover:border-b-2 hover:border-green-600 transition duration-300 pb-1 text-green-600"
-          >
-            概要
-          </Link>
 
           <Link
-            href="/about-election"
+            href="/overview"
             className="text-lg font-semibold hover:border-b-2 hover:border-green-600 transition duration-300 pb-1 text-green-600"
           >
             選挙とは？
@@ -41,10 +35,10 @@ const Header = () => {
           </Link>
 
           <Link
-            href="/candidates"
+            href="https://drive.google.com/file/d/1UTIbJA8vp0z4_pXENxEnEYMmFaOkS9Ng/view?usp=sharing"
             className="text-lg font-semibold hover:border-b-2 hover:border-green-600 transition duration-300 pb-1 text-green-600"
           >
-              会則・注意事項
+              中学生徒会役員選挙細則
           </Link>
        </div>
       </nav>

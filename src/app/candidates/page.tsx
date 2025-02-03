@@ -1,0 +1,77 @@
+import React from 'react';
+import Header from "../components/Header";
+import { FaVoteYea, FaChevronRight, FaInfoCircle } from 'react-icons/fa';
+import Link from 'next/link';
+
+const candidates = [
+  { id: 1, name: '安倍晋三', photo: '/./chair.webp', position: '会長' },
+  { id: 2, name: '岸田文雄', photo: '/./chair.webp', position: '副会長' },
+  { id: 3, name: '麻生太郎', photo: '/./chair.webp', position: '会計' },
+  { id: 4, name: '石破茂', photo: '/./chair.webp', position: '書記' },
+  { id: 5, name: '花田純之介', photo: '/./chair.webp', position: '会長' },
+  // 他の候補者データ
+];
+
+const CandidatePage = () => {
+  const renderCandidates = (position: string) => (
+    candidates.filter(candidate => candidate.position === position).map(candidate => (
+      <div key={candidate.id} className="flex items-center rounded p-4 w-full md:w-1/3 box-border mb-4 justify-center">
+        <img src={candidate.photo} alt={candidate.name} className="w-1/2 h-auto rounded-l" />
+        <div className="flex flex-col items-center justify-center p-4 w-1/2 bg-green-700 text-white rounded-r" style={{ height: '100%' }}>
+          <span className="text-xl font-bold">{candidate.name}</span>
+          <Link href={`/candidates/${candidate.id}`} legacyBehavior>
+            <a className="mt-2 p-2 bg-white rounded-full transition-transform duration-300 hover:translate-x-2">
+              <FaChevronRight className="text-green-700" />
+            </a>
+          </Link>
+        </div>
+      </div>
+    ))
+  );
+
+  const renderSection = (position: string, title: string) => (
+    <section className="mb-8">
+      <div className="flex items-center w-full mb-4">
+        <div className="bg-white w-1/5 text-black font-bold py-4 px-6 h-16 relative ml-5 flex items-center">
+          <div className="absolute left-0 top-0 bottom-0 bg-green-700 ml-1 mr-5 w-2"></div>
+          <h2 className="text-2xl ml-6 mb-2">{title}</h2>
+        </div>
+        <button className="flex items-center bg-red-700 text-white p-3 border-none rounded ml-4">
+          <FaVoteYea className="mr-2" />
+          信任投票
+        </button>
+      </div>
+      <div className="flex flex-wrap gap-4">
+        {renderCandidates(position)}
+      </div>
+    </section>
+  );
+
+  return (
+    <div className="p-5 bg-[#F1F1F1] mt-20">
+      <Header />
+      <header className="flex items-center mb-8">
+        <div className="bg-green-700 w-1/6 text-white font-bold py-4 px-6 h-16 relative ml-5 flex items-center">
+          <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2"></div>
+          <h2 className="text-3xl ml-6 mb-2">候補者一覧</h2>
+        </div>
+        <button className="flex items-center bg-white text-black p-3 border border-black rounded ml-4">
+          <FaInfoCircle className="mr-2" />
+          信任投票とは
+        </button>
+      </header>
+      <div className="bg-white p-6 text-center w-3/5 mx-auto mt-4 mb-4">
+        <p className="text-lg">
+          候補者の下の矢印から各候補者のページに飛べます。
+        </p>
+      </div>
+
+      {renderSection('会長', '会長立候補者')}
+      {renderSection('副会長', '副会長立候補者')}
+      {renderSection('会計', '会計立候補者')}
+      {renderSection('書記', '書記立候補者')}
+    </div>
+  );
+};
+
+export default CandidatePage;
