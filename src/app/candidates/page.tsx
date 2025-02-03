@@ -32,16 +32,16 @@ const CandidatePage = () => {
   const renderSection = (position: string, title: string) => (
     <section className="mb-8">
       <div className="flex items-center w-full mb-4">
-        <div className="bg-white w-1/5 text-black font-bold py-4 px-6 h-16 relative ml-5 flex items-center">
-          <div className="absolute left-0 top-0 bottom-0 bg-green-700 ml-1 mr-5 w-2"></div>
-          <h2 className="text-2xl ml-6 mb-2">{title}</h2>
+        <div className="bg-white text-green-700 font-bold py-1 px-4 relative ml-[10%] inline-block align-middle">
+          <div className="absolute left-0 top-0 bottom-0 bg-green-700 ml-1 mr-5 w-2 h-full"></div>
+          <h2 className="text-3xl ml-6 mb-2 inline-block align-middle">{title}</h2>
         </div>
         <button className="flex items-center bg-red-700 text-white p-3 border-none rounded ml-4">
           <FaVoteYea className="mr-2" />
           信任投票
         </button>
       </div>
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 ml-[10%]">
         {renderCandidates(position)}
       </div>
     </section>
@@ -51,9 +51,9 @@ const CandidatePage = () => {
     <div className="p-5 bg-[#F1F1F1] mt-20">
       <Header />
       <header className="flex items-center mb-8">
-        <div className="bg-green-700 w-1/6 text-white font-bold py-4 px-6 h-16 relative ml-5 flex items-center">
-          <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2"></div>
-          <h2 className="text-3xl ml-6 mb-2">候補者一覧</h2>
+        <div className="bg-green-700 text-white font-bold py-1 px-4 relative ml-[10%] inline-block align-middle">
+          <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
+          <h2 className="text-3xl ml-6 mb-2 inline-block align-middle">候補者一覧</h2>
         </div>
         <button className="flex items-center bg-white text-black p-3 border border-black rounded ml-4">
           <FaInfoCircle className="mr-2" />
