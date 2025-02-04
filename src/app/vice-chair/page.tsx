@@ -29,16 +29,16 @@ const ViceChairPage = () => {
           <div className="flex items-center w-full mb-4">
             <div className="bg-white text-green-700 font-bold py-1 px-4 relative ml-[10%] inline-block align-middle">
               <div className="absolute left-0 top-0 bottom-0 bg-green-700 ml-1 mr-5 w-2 h-full"></div>
-              <h1 className="text-4xl ml-6 mb-2 inline-block align-middle">副会長</h1>
+              <h1 className="text-4xl ml-6 mb-2 inline-block align-middle mt-2 mr-4">副会長</h1>
             </div>
           </div>
           <Image src="/vice-chair.webp" alt="役職画像" width={300} height={300} className="max-w-full h-auto mt-5" />
           <p className="text-xl font-semibold mt-2">2024年度中学生徒会副会長 東明里</p>
           <div className="mt-4 w-full">
             <div className="flex items-center w-full mb-4">
-                <div className="bg-green-700 text-white font-bold py-1 px-4 relative ml-[10%] inline-block align-middle flex justify-center items-center">
+                <div className="bg-green-700 text-white font-bold py-1 px-4 relative inline-block align-middle flex justify-center items-center">
                 <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
-                <h2 className="text-3xl ml-6 mb-2 inline-block align-middle">職務内容</h2>
+                <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">職務内容</h2>
                 </div>
             </div>
             <div className="bg-white p-4 mt-2 shadow">
