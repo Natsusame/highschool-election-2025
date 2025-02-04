@@ -39,7 +39,7 @@ const Timer = () => {
   return (
     <div className="text-center">
       <h2 className="text-2xl font-bold mb-4 mt-5">投票まであと</h2>
-      <div className="text-4xl font-semibold">
+      <div className="text-3xl font-semibold">
         {timeLeft.days}日 {timeLeft.hours}時間 {timeLeft.minutes}分 {timeLeft.seconds}秒
       </div>
     </div>

@@ -20,7 +20,7 @@ const Home = () => {
         {/* 選挙の仕組み */}
         <div className="bg-green-700 text-white font-bold py-1 px-4 relative ml-[10%] inline-block align-middle">
           <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
-          <h2 className="text-3xl ml-6 mb-2 inline-block align-middle">選挙の仕組み</h2>
+          <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">選挙の仕組み</h2>
         </div>
             <Image
             src="/./method.webp"
@@ -45,7 +45,7 @@ const Home = () => {
       {/* 役職紹介 */}
       <div className="bg-green-700 text-white font-bold py-1 px-4 relative ml-[10%] inline-block align-middle mt-10">
         <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
-        <h2 className="text-3xl ml-6 mb-2 inline-block align-middle">役職紹介</h2>
+        <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">役職紹介</h2>
       </div>
         <div className="bg-white p-6 text-center w-3/5 mx-auto mt-4 mb-4">
           <p className="text-lg">

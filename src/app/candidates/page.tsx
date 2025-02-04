@@ -37,7 +37,7 @@ const CandidatePage = () => {
       <div className="flex items-center w-full mb-4">
         <div className="bg-white text-green-700 font-bold py-1 px-4 relative ml-[10%] inline-block align-middle">
           <div className="absolute left-0 top-0 bottom-0 bg-green-700 ml-1 mr-5 w-2 h-full"></div>
-          <h2 className="text-3xl ml-6 mb-2 inline-block align-middle">{title}</h2>
+          <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-4">{title}</h2>
         </div>
         <button className="flex items-center bg-red-700 text-white p-3 border-none rounded ml-4">
           <FaVoteYea className="mr-2" />
@@ -56,7 +56,7 @@ const CandidatePage = () => {
       <header className="flex items-center mb-8">
         <div className="bg-green-700 text-white font-bold py-1 px-4 relative ml-[10%] inline-block align-middle">
           <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
-          <h2 className="text-3xl ml-6 mb-2 inline-block align-middle">候補者一覧</h2>
+          <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">候補者一覧</h2>
         </div>
         <button 
           className="flex items-center bg-white text-black p-3 border border-black rounded ml-4"
@@ -69,11 +69,11 @@ const CandidatePage = () => {
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
             <div className="bg-white p-6 rounded shadow-lg w-3/4 md:w-1/2">
               <h2 className="text-2xl font-bold mb-4">信任投票とは</h2>
-                <p className="mb-4">
-                信任投票とは、役職に立候補した人が1人しかいない場合に行われる投票のことです。<br />
-                有権者は、その候補者を「信任する（賛成）」か「信任しない（反対）」かを選びます。<br />
-                投票の結果、信任が得られればその人が役職に就き、得られなければ別の方法で選び直すことになります。
-                </p>
+              <p className="mb-4">
+              信任投票とは、役職に立候補した人が1人しかいない場合に行われる投票のことです。
+              有権者は、その候補者を「信任する（賛成）」か「信任しない（反対）」かを選びます。
+              投票の結果、信任が得られればその人が役職に就き、得られなければ別の方法で選び直すことになります。
+              </p>
               <button 
           className="bg-red-700 text-white p-2 rounded"
           onClick={() => setShowModal(false)}

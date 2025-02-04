@@ -42,9 +42,9 @@ const Home = () => {
         <Results />
         
         {/* カウントダウン */}
-        <div className="bg-green-700 w-[15%] text-white font-bold py-2 px-4 h-12 relative ml-[10%]">
+        <div className="bg-green-700 w-[14%] text-white font-bold py-2 px-4 h-12 relative ml-[10%]">
           <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2"></div>
-          <h2 className="text-3xl ml-6 mb-2">選挙日程</h2>
+          <h2 className="text-3xl ml-6 mb-2 -mt-1 mr-3">選挙日程</h2>
         </div>
         <div className="bg-white p-6 text-center w-3/5 mx-auto border-t-4 border-green-600 mt-[5%] mb-[5%]">
           <div className="flex justify-between">
