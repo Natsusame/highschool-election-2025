@@ -23,14 +23,14 @@ const Home = () => {
           <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">選挙の仕組み</h2>
         </div>
             <Image
-            src="/./method.webp"
+            src="/method.webp"
             alt="Election process method 1"
             width={500}
             height={300}
             className="mx-auto mb-4"
             />
             <Image
-            src="/./method2.webp"
+            src="/method2.webp"
             alt="Election process method 2"
             width={500}
             height={300}
@@ -55,7 +55,7 @@ const Home = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 justify-center">
         <div className="flex flex-col md:flex-row items-center ml-32 justify-center">
           <Image
-        src="/./chair.webp"
+        src="/chair.webp"
         alt="生徒会長"
         width={200}
         height={200}
@@ -73,7 +73,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center -ml-32 justify-center">
           <Image
-        src="/./vice-chair.webp"
+        src="/vice-chair.webp"
         alt="副会長"
         width={200}
         height={200}
@@ -91,7 +91,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center ml-32 justify-center">
           <Image
-        src="/./secretary.webp"
+        src="/secretary.webp"
         alt="書記"
         width={200}
         height={200}
@@ -109,7 +109,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center -ml-32 justify-center">
           <Image
-        src="/./treasurer.webp"
+        src="/treasurer.webp"
         alt="会計"
         width={200}
         height={200}
