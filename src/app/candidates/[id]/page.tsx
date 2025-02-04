@@ -7,22 +7,170 @@ import Link from "next/link";
 
 const candidates = [
   {
-    id: 1,
-    name: "安倍晋三",
-    photo: "/./chair.webp",
-    position: "会長",
-    course: "SGコース",
-    class: "M2-6",
-    club: "ディベート部",
-    committee: "生徒会",
-    electionsWon: 1,
-    slogan: "アベノミクス始動",
-    statement:
-      "アベノミクスの第1と第2の矢である金融政策と財政政策によって円安・株高を実現し、第3の矢である成長戦略によって企業の業績が回復",
-    manifestoVideo: "https://drive.google.com/file/d/xxxxx/preview",
-    posterImage: "https://drive.google.com/uc?export=view&id=xxxxx",
+    "id": 1,
+    "name": "上田怜",
+    "photo": "/./ueda.webp",
+    "position": "会長",
+    "course": "本科コース",
+    "class": "M2-2",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 0,
+    "slogan": "学校の枠を超える、繋がれる学校に",
+    "statement": "スピーチ未設定",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
   },
-  // 他の候補者データ
+  {
+    "id": 2,
+    "name": "松本椿",
+    "photo": "/./tsubaki.webp",
+    "position": "新中三会計",
+    "course": "医サイコース",
+    "class": "M2-5",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 1,
+    "slogan": "相談しやすい学園に。",
+    "statement": "スピーチ未設定",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+  },
+  {
+    "id": 3,
+    "name": "鹿郷浬央",
+    "photo": "/./kakyou.webp",
+    "position": "新中三書記",
+    "course": "本科コース",
+    "class": "M2-1",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 0,
+    "slogan": "学園生活をもっと楽しくする！",
+    "statement": "スピーチ未設定",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+  },
+  {
+    "id": 4,
+    "name": "尾崎芽羽",
+    "photo": "/./ozaki.webp",
+    "position": "新中三書記",
+    "course": "本科コース",
+    "class": "M2-3",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 0,
+    "slogan": "スローガン未設定",
+    "statement": "スピーチ未設定",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+  },
+  {
+    "id": 5,
+    "name": "亀甲愛奈",
+    "photo": "/./kikkou.webp",
+    "position": "副会長",
+    "course": "本科コース",
+    "class": "M1-4",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 0,
+    "slogan": "スローガン未設定",
+    "statement": "生徒が作る広尾学園へ",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+  },
+  {
+    "id": 6,
+    "name": "瓜生妃花",
+    "photo": "/./uryu.webp",
+    "position": "副会長",
+    "course": "AGコース",
+    "class": "M1-6",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 0,
+    "slogan": "誰もが活躍できる学校へ",
+    "statement": "スピーチ未設定",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+  },
+  {
+    "id": 7,
+    "name": "名畑政吾",
+    "photo": "/./nahata.webp",
+    "position": "副会長",
+    "course": "AGコース",
+    "class": "M1-6",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 0,
+    "slogan": "笑いあり、涙ありの学校に",
+    "statement": "スピーチ未設定",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+  },
+  {
+    "id": 8,
+    "name": "古瀬はるか",
+    "photo": "/./kose.webp",
+    "position": "新中二会計",
+    "course": "本科コース",
+    "class": "M1-2",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 0,
+    "slogan": "毎日に心躍る広尾学園を！",
+    "statement": "スピーチ未設定",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+  },
+  {
+    "id": 9,
+    "name": "山田理貴",
+    "photo": "/./yamada.webp",
+    "position": "新中一会計",
+    "course": "本科コース",
+    "class": "M1-3",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 0,
+    "slogan": "自分たちの学校は自分たちで作る",
+    "statement": "スピーチ未設定",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+  },
+  {
+    "id": 10,
+    "name": "保田朝陽",
+    "photo": "/./houda.webp",
+    "position": "新中二書記",
+    "course": "本科コース",
+    "class": "M1-2",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 0,
+    "slogan": "生徒が輝ける学園へ",
+    "statement": "スピーチ未設定",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+  },
+  {
+    "id": 11,
+    "name": "髙橋祐希",
+    "photo": "/./takahashi.webp",
+    "position": "新中二書記",
+    "course": "医サイコース",
+    "class": "M1-5",
+    "club": "無所属",
+    "committee": "無所属",
+    "electionsWon": 0,
+    "slogan": "スローガン未設定",
+    "statement": "スピーチ未設定",
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
+    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+  }
 ];
 
 interface Candidate {
@@ -38,7 +186,6 @@ interface Candidate {
   slogan: string;
   statement: string;
   manifestoVideo: string;
-  posterImage: string;
 }
 
 const CandidateDetail = () => {
@@ -129,22 +276,6 @@ const CandidateDetail = () => {
           className="w-full h-64 md:h-96 border rounded-lg"
           allowFullScreen
         ></iframe>
-        </div>
-      </div>
-
-      <div className="mt-6">
-        <div className="flex items-center w-full mb-4">
-          <div className="bg-green-700 text-white font-bold py-1 px-4 relative inline-block align-middle flex justify-center items-center">
-            <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
-            <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">ポスター</h2>
-          </div>
-        </div>
-        <div className="mt-4 w-full md:w-3/4 mx-auto">
-        <img
-          src={candidate.posterImage}
-          alt={`${candidate.name} のポスター`}
-          className="w-full rounded-lg shadow-lg"
-        />
         </div>
       </div>
       </div>

@@ -45,6 +45,10 @@ const CandidatePage = () => {
           <div className="absolute left-0 top-0 bottom-0 bg-green-700 ml-1 mr-5 w-2 h-full"></div>
           <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-4">{title}</h2>
         </div>
+        <div className="bg-white text-green-700 font-bold py-1 px-4 relative ml-4 inline-block align-middle">
+          <div className="absolute left-0 top-0 bottom-0 bg-green-700 ml-1 mr-5 w-2 h-full"></div>
+          <h2 className="text-xl ml-6 mb-2 inline-block align-middle mt-2 mr-4">選出役員数: {position === '会長' || position === '副会長' || position === 'm3会計' || position === 'm2会計' || position === 'm2書記' ? '1名' : '2名'}</h2>
+        </div>
         {(position === '会長' || position === 'm3会計'|| position === 'm3書記') && (
           <button className="flex items-center bg-red-700 text-white p-3 border-none rounded ml-4">
             <FaVoteYea className="mr-2" />
