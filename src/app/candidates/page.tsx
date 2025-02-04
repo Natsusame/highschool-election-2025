@@ -5,11 +5,17 @@ import { FaVoteYea, FaChevronRight, FaInfoCircle } from 'react-icons/fa';
 import Link from 'next/link';
 
 const candidates = [
-  { id: 1, name: '安倍晋三', photo: '/./chair.webp', position: '会長' },
-  { id: 2, name: '岸田文雄', photo: '/./chair.webp', position: '副会長' },
-  { id: 3, name: '麻生太郎', photo: '/./chair.webp', position: '会計' },
-  { id: 4, name: '石破茂', photo: '/./chair.webp', position: '書記' },
-  { id: 5, name: '花田純之介', photo: '/./chair.webp', position: '会長' },
+  { id: 1, name: '上田怜', photo: '/./ueda.webp', position: '会長' },
+  { id: 2, name: '松本椿', photo: '/./tsubaki.webp', position: 'm3会計' },
+  { id: 3, name: '鹿郷浬央', photo: '/./kakyou.webp', position: 'm3書記' },
+  { id: 4, name: '尾崎芽羽', photo: '/./ozaki.webp', position: 'm3書記' },
+  { id: 5, name: '亀甲愛奈', photo: '/./kikkou.webp', position: '副会長' },
+  { id: 6, name: '瓜生妃花', photo: '/./uryu.webp', position: '副会長' },
+  { id: 7, name: '名畑政吾', photo: '/./nahata.webp', position: '副会長' },
+  { id: 8, name: '古瀬はるか', photo: '/./kose.webp', position: 'm2会計' },
+  { id: 9, name: '山田理貴', photo: '/./yamada.webp', position: 'm2会計' },
+  { id: 10, name: '保田朝陽', photo: '/./houda.webp', position: 'm2書記' },
+  { id: 11, name: '髙橋祐希', photo: '/./takahashi.webp', position: 'm2書記' },
   // 他の候補者データ
 ];
 
@@ -39,10 +45,12 @@ const CandidatePage = () => {
           <div className="absolute left-0 top-0 bottom-0 bg-green-700 ml-1 mr-5 w-2 h-full"></div>
           <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-4">{title}</h2>
         </div>
-        <button className="flex items-center bg-red-700 text-white p-3 border-none rounded ml-4">
-          <FaVoteYea className="mr-2" />
-          信任投票
-        </button>
+        {(position === '会長' || position === 'm3会計'|| position === 'm3書記') && (
+          <button className="flex items-center bg-red-700 text-white p-3 border-none rounded ml-4">
+            <FaVoteYea className="mr-2" />
+            信任投票
+          </button>
+        )}
       </div>
       <div className="flex flex-wrap gap-4 ml-[10%]">
         {renderCandidates(position)}
@@ -70,15 +78,15 @@ const CandidatePage = () => {
             <div className="bg-white p-6 rounded shadow-lg w-3/4 md:w-1/2">
               <h2 className="text-2xl font-bold mb-4">信任投票とは</h2>
               <p className="mb-4">
-              信任投票とは、役職に立候補した人が1人しかいない場合に行われる投票のことです。
-              有権者は、その候補者を「信任する（賛成）」か「信任しない（反対）」かを選びます。
-              投票の結果、信任が得られればその人が役職に就き、得られなければ別の方法で選び直すことになります。
+                信任投票とは、役職に立候補した人が1人しかいない場合に行われる投票のことです。<br />
+                有権者は、その候補者を「信任する（賛成）」か「信任しない（反対）」かを選びます。<br />
+                投票の結果、信任が得られればその人が役職に就き、得られなければ別の方法で選び直すことになります。<br />
               </p>
               <button 
-          className="bg-red-700 text-white p-2 rounded"
-          onClick={() => setShowModal(false)}
+                className="bg-red-700 text-white p-2 rounded"
+                onClick={() => setShowModal(false)}
               >
-          閉じる
+                閉じる
               </button>
             </div>
           </div>
@@ -90,10 +98,12 @@ const CandidatePage = () => {
         </p>
       </div>
 
-      {renderSection('会長', '会長立候補者')}
-      {renderSection('副会長', '副会長立候補者')}
-      {renderSection('会計', '会計立候補者')}
-      {renderSection('書記', '書記立候補者')}
+      {renderSection('会長', '会長立候補者(新中三)')}
+      {renderSection('副会長', '副会長立候補者(新中二)')}
+      {renderSection('m3会計', '会計立候補者(新中三)')}
+      {renderSection('m2会計', '会計立候補者(新中二)')}
+      {renderSection('m3書記', '書記立候補者(新中三)')}
+      {renderSection('m2書記', '書記立候補者(新中二)')}
     </div>
   );
 };
