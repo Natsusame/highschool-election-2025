@@ -56,7 +56,7 @@ const CandidateDetail = () => {
   }, [id]);
 
   if (!candidate) {
-    return <div>Candidate not found.</div>;
+    return <div>立候補者ページが見つかりませんでした。</div>;
   }
 
   return (
@@ -71,7 +71,7 @@ const CandidateDetail = () => {
 
       <div className="flex flex-col md:flex-row items-start">
         <div className="flex-1">
-        <p className="text-lg text-gray-700">{candidate.position}立候補者</p>
+        <p className="text-lg text-gray-700 font-bold mb-2">{candidate.position}立候補者</p>
         <h1 className="text-4xl text-green-700 font-bold">{candidate.name}</h1>
         <div className="mt-6">
           <h2 className="text-2xl font-semibold border-b pb-2">プロフィール</h2>
@@ -91,6 +91,9 @@ const CandidateDetail = () => {
           <li>
         <strong>当選回数:</strong> {candidate.electionsWon} 回
           </li>
+          <li>
+        <strong>キャッチフレーズ:</strong> {candidate.slogan}
+          </li>
           </ul>
         </div>
         </div>
@@ -104,19 +107,22 @@ const CandidateDetail = () => {
       </div>
 
       <div className="mt-6">
-        <h2 className="text-2xl font-semibold border-b pb-2">キャッチフレーズ</h2>
-        <p className="mt-2 text-xl font-bold text-green-700">
-        {candidate.slogan}
-        </p>
-      </div>
-
-      <div className="mt-6">
-        <h2 className="text-2xl font-semibold border-b pb-2">所信表明</h2>
+        <div className="flex items-center w-full mb-4">
+          <div className="bg-green-700 text-white font-bold py-1 px-4 relative inline-block align-middle flex justify-center items-center">
+            <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
+            <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">所信表明</h2>
+          </div>
+        </div>
         <p className="mt-2 text-lg">{candidate.statement}</p>
       </div>
 
       <div className="mt-6">
-        <h2 className="text-2xl font-semibold border-b pb-2">政見放送</h2>
+        <div className="flex items-center w-full mb-4">
+          <div className="bg-green-700 text-white font-bold py-1 px-4 relative inline-block align-middle flex justify-center items-center">
+            <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
+            <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">政見放送</h2>
+          </div>
+        </div>
         <div className="mt-4 w-full md:w-3/4 mx-auto">
         <iframe
           src={candidate.manifestoVideo}
@@ -127,7 +133,12 @@ const CandidateDetail = () => {
       </div>
 
       <div className="mt-6">
-        <h2 className="text-2xl font-semibold border-b pb-2">ポスター</h2>
+        <div className="flex items-center w-full mb-4">
+          <div className="bg-green-700 text-white font-bold py-1 px-4 relative inline-block align-middle flex justify-center items-center">
+            <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
+            <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">ポスター</h2>
+          </div>
+        </div>
         <div className="mt-4 w-full md:w-3/4 mx-auto">
         <img
           src={candidate.posterImage}
