@@ -1,4 +1,5 @@
-import React from 'react';
+"use client";
+import React, { useState } from 'react';
 import Header from "../components/Header";
 import { FaVoteYea, FaChevronRight, FaInfoCircle } from 'react-icons/fa';
 import Link from 'next/link';
@@ -13,6 +14,8 @@ const candidates = [
 ];
 
 const CandidatePage = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const renderCandidates = (position: string) => (
     candidates.filter(candidate => candidate.position === position).map(candidate => (
       <div key={candidate.id} className="flex items-center rounded p-4 w-full md:w-1/3 box-border mb-4 justify-center">
@@ -55,10 +58,31 @@ const CandidatePage = () => {
           <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
           <h2 className="text-3xl ml-6 mb-2 inline-block align-middle">候補者一覧</h2>
         </div>
-        <button className="flex items-center bg-white text-black p-3 border border-black rounded ml-4">
+        <button 
+          className="flex items-center bg-white text-black p-3 border border-black rounded ml-4"
+          onClick={() => setShowModal(true)}
+        >
           <FaInfoCircle className="mr-2" />
           信任投票とは
         </button>
+        {showModal && (
+          <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+            <div className="bg-white p-6 rounded shadow-lg w-3/4 md:w-1/2">
+              <h2 className="text-2xl font-bold mb-4">信任投票とは</h2>
+                <p className="mb-4">
+                信任投票とは、役職に立候補した人が1人しかいない場合に行われる投票のことです。<br />
+                有権者は、その候補者を「信任する（賛成）」か「信任しない（反対）」かを選びます。<br />
+                投票の結果、信任が得られればその人が役職に就き、得られなければ別の方法で選び直すことになります。
+                </p>
+              <button 
+          className="bg-red-700 text-white p-2 rounded"
+          onClick={() => setShowModal(false)}
+              >
+          閉じる
+              </button>
+            </div>
+          </div>
+        )}
       </header>
       <div className="bg-white p-6 text-center w-3/5 mx-auto mt-4 mb-4">
         <p className="text-lg">
