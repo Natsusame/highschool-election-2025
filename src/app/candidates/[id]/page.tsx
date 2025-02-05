@@ -18,8 +18,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "学校の枠を超える、繋がれる学校に",
     "statement": "スピーチ未設定",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   },
   {
     "id": 2,
@@ -33,8 +32,7 @@ const candidates = [
     "electionsWon": 1,
     "slogan": "相談しやすい学園に。",
     "statement": "スピーチ未設定",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   },
   {
     "id": 3,
@@ -48,8 +46,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "学園生活をもっと楽しくする！",
     "statement": "スピーチ未設定",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   },
   {
     "id": 4,
@@ -63,8 +60,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "スローガン未設定",
     "statement": "スピーチ未設定",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   },
   {
     "id": 5,
@@ -78,8 +74,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "スローガン未設定",
     "statement": "生徒が作る広尾学園へ",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   },
   {
     "id": 6,
@@ -93,8 +88,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "誰もが活躍できる学校へ",
     "statement": "スピーチ未設定",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   },
   {
     "id": 7,
@@ -108,8 +102,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "笑いあり、涙ありの学校に",
     "statement": "スピーチ未設定",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   },
   {
     "id": 8,
@@ -123,8 +116,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "毎日に心躍る広尾学園を！",
     "statement": "スピーチ未設定",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   },
   {
     "id": 9,
@@ -138,8 +130,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "自分たちの学校は自分たちで作る",
     "statement": "スピーチ未設定",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   },
   {
     "id": 10,
@@ -153,8 +144,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "生徒が輝ける学園へ",
     "statement": "スピーチ未設定",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   },
   {
     "id": 11,
@@ -168,8 +158,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "スローガン未設定",
     "statement": "スピーチ未設定",
-    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview",
-    "posterImage": "https://drive.google.com/uc?export=view&id=xxxxx"
+    "manifestoVideo": "https://drive.google.com/file/d/xxxxx/preview"
   }
 ];
 
