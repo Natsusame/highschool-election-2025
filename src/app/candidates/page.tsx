@@ -23,9 +23,9 @@ const CandidatePage = () => {
 
   const renderCandidates = (position: string) => (
     candidates.filter(candidate => candidate.position === position).map(candidate => (
-      <div key={candidate.id} className="flex items-center rounded p-4 w-full md:w-1/3 box-border mb-4 justify-center">
-        <img src={candidate.photo} alt={candidate.name} className="w-1/2 h-auto rounded-l" />
-        <div className="flex flex-col items-center justify-center p-4 w-1/2 bg-green-700 text-white rounded-r" style={{ height: '100%' }}>
+      <div key={candidate.id} className="flex flex-col md:flex-row items-center rounded p-4 w-full md:w-1/3 box-border mb-4 justify-center">
+        <img src={candidate.photo} alt={candidate.name} className="w-full md:w-1/2 h-auto rounded-t md:rounded-l md:rounded-t-none" />
+        <div className="flex flex-col items-center justify-center p-4 w-full md:w-1/2 bg-green-700 text-white rounded-b md:rounded-r md:rounded-b-none" style={{ height: '100%' }}>
           <span className="text-xl font-bold">{candidate.name}</span>
           <Link href={`/candidates/${candidate.id}`} legacyBehavior>
             <a className="mt-2 p-2 bg-white rounded-full transition-transform duration-300 hover:translate-x-2">
@@ -39,22 +39,22 @@ const CandidatePage = () => {
 
   const renderSection = (position: string, title: string) => (
     <section className="mb-8">
-      <div className="flex items-center w-full mb-4">
-        <div className="bg-white text-green-700 font-bold py-1 px-4 relative ml-[10%] inline-block align-middle">
+      <div className="flex flex-col md:flex-row items-center w-full mb-4">
+        <div className="bg-white text-green-700 font-bold py-1 px-4 relative ml-0 md:ml-[10%] inline-block align-middle">
           <div className="absolute left-0 top-0 bottom-0 bg-green-700 ml-1 mr-5 w-2 h-full"></div>
-          <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-4">{title}</h2>
+          <h2 className="text-xl md:text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-4">{title}</h2>
         </div>
-        <div className="text-black font-bold ml-4">
+        <div className="text-black font-bold ml-0 md:ml-4 mt-4 md:mt-0">
           <h2 className="text-xl">選出役員数: {position === '会長' || position === '副会長' || position === 'm3会計' || position === 'm2会計' || position === 'm2書記' ? '1名' : '2名'}</h2>
         </div>
         {(position === '会長' || position === 'm3会計'|| position === 'm3書記') && (
-          <button className="flex items-center bg-red-700 text-white p-3 border-none rounded ml-4">
+          <button className="flex items-center bg-red-700 text-white p-3 border-none rounded ml-0 md:ml-4 mt-4 md:mt-0">
             <FaVoteYea className="mr-2" />
             信任投票
           </button>
         )}
       </div>
-      <div className="flex flex-wrap gap-4 ml-[10%]">
+      <div className="flex flex-wrap gap-4 ml-0 md:ml-[10%]">
         {renderCandidates(position)}
       </div>
     </section>
@@ -63,13 +63,13 @@ const CandidatePage = () => {
   return (
     <div className="p-5 bg-[#F1F1F1] mt-20">
       <Header />
-      <header className="flex items-center mb-8">
-        <div className="bg-green-700 text-white font-bold py-1 px-4 relative ml-[10%] inline-block align-middle">
+      <header className="flex flex-col md:flex-row items-center mb-8">
+        <div className="bg-green-700 text-white font-bold py-1 px-4 relative ml-0 md:ml-[10%] inline-block align-middle">
           <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
           <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">候補者一覧</h2>
         </div>
         <button 
-          className="flex items-center bg-white text-black p-3 border border-black rounded ml-4"
+          className="flex items-center bg-white text-black p-3 border border-black rounded ml-0 md:ml-4 mt-4 md:mt-0"
           onClick={() => setShowModal(true)}
         >
           <FaInfoCircle className="mr-2" />
@@ -94,7 +94,7 @@ const CandidatePage = () => {
           </div>
         )}
       </header>
-      <div className="bg-white p-6 text-center w-3/5 mx-auto mt-4 mb-4">
+      <div className="bg-white p-6 text-center w-full md:w-3/5 mx-auto mt-4 mb-4">
         <p className="text-lg">
           候補者の下の矢印から各候補者のページに飛べます。
         </p>

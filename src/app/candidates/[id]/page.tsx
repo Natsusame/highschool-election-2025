@@ -184,77 +184,71 @@ const CandidateDetail = () => {
   return (
     <div className="p-5 bg-[#F1F1F1] mt-20 min-h-screen">
       <Header />
-      <div className="w-4/5 mx-auto bg-white p-6 rounded-lg shadow-lg">
-      <Link href="/candidates">
-        <button className="flex items-center text-green-700 mb-4">
-        <FaArrowLeft className="mr-2" /> 候補者一覧へ戻る
-        </button>
-      </Link>
+      <div className="w-full md:w-4/5 mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <Link href="/candidates">
+          <button className="flex items-center text-green-700 mb-4">
+            <FaArrowLeft className="mr-2" /> 候補者一覧へ戻る
+          </button>
+        </Link>
 
-      <div className="flex flex-col md:flex-row items-start">
-        <div className="flex-1">
-        <p className="text-lg text-gray-700 font-bold mb-2">{candidate.position}立候補者</p>
-        <h1 className="text-4xl text-green-700 font-bold">{candidate.name}</h1>
+        <div className="flex flex-col md:flex-row items-start">
+          <div className="flex-1">
+            <p className="text-lg text-gray-700 font-bold mb-2">{candidate.position}立候補者</p>
+            <h1 className="text-4xl text-green-700 font-bold">{candidate.name}</h1>
+            <div className="mt-6">
+              <h2 className="text-2xl font-semibold border-b pb-2">プロフィール</h2>
+              <ul className="mt-4 text-lg">
+                <li>
+                  <strong>所属コース:</strong> {candidate.course}
+                </li>
+                <li>
+                  <strong>所属クラス:</strong> {candidate.class}
+                </li>
+                <li>
+                  <strong>当選回数:</strong> {candidate.electionsWon} 回
+                </li>
+                <li>
+                  <strong>キャッチフレーズ:</strong> {candidate.slogan}
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="flex-shrink-0 mt-6 md:mt-0 md:ml-6">
+            <img
+              src={candidate.photo}
+              alt={candidate.name}
+              className="w-full md:w-80 h-auto rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+
         <div className="mt-6">
-          <h2 className="text-2xl font-semibold border-b pb-2">プロフィール</h2>
-          <ul className="mt-4 text-lg">
-          <li>
-        <strong>所属コース:</strong> {candidate.course}
-          </li>
-          <li>
-        <strong>所属クラス:</strong> {candidate.class}
-          </li>
-            {/* <li>
-          <strong>部活:</strong> {candidate.club}
-            </li>
-            <li>
-          <strong>委員会:</strong> {candidate.committee}
-            </li> */}
-          <li>
-        <strong>当選回数:</strong> {candidate.electionsWon} 回
-          </li>
-          <li>
-        <strong>キャッチフレーズ:</strong> {candidate.slogan}
-          </li>
-          </ul>
+          <div className="flex items-center w-full mb-4">
+            <div className="bg-green-700 text-white font-bold py-1 px-4 relative inline-block align-middle flex justify-center items-center">
+              <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
+              <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">所信表明</h2>
+            </div>
+          </div>
+          <p className="mt-2 text-lg">{candidate.statement}</p>
         </div>
-        </div>
-        <div className="flex-shrink-0 ml-6">
-        <img
-          src={candidate.photo}
-          alt={candidate.name}
-          className="w-80 h-auto rounded-lg shadow-lg mr-20"
-        />
-        </div>
-      </div>
 
-      <div className="mt-6">
-        <div className="flex items-center w-full mb-4">
+        <div className="mt-6">
+          <div className="flex items-center w-full mb-4">
           <div className="bg-green-700 text-white font-bold py-1 px-4 relative inline-block align-middle flex justify-center items-center">
-            <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
-            <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">所信表明</h2>
+              <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
+              <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">政見放送</h2>
+            </div>
+          </div>
+          <div className="mt-4 w-full md:w-3/4 mx-auto">
+            <iframe
+              src={candidate.manifestoVideo}
+              className="w-full h-64 md:h-96 border rounded-lg"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
-        <p className="mt-2 text-lg">{candidate.statement}</p>
-      </div>
-
-      <div className="mt-6">
-        <div className="flex items-center w-full mb-4">
-          <div className="bg-green-700 text-white font-bold py-1 px-4 relative inline-block align-middle flex justify-center items-center">
-            <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
-            <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">政見放送</h2>
-          </div>
-        </div>
-        <div className="mt-4 w-full md:w-3/4 mx-auto">
-        <iframe
-          src={candidate.manifestoVideo}
-          className="w-full h-64 md:h-96 border rounded-lg"
-          allowFullScreen
-        ></iframe>
-        </div>
       </div>
       </div>
-    </div>
   );
 };
 

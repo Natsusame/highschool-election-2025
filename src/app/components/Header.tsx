@@ -1,8 +1,15 @@
 "use client";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full bg-white z-10 shadow-md py-4">
       <nav className="flex items-center justify-between px-4">
@@ -17,31 +24,76 @@ const Header = () => {
           />
         </Link>
 
-        {/* ナビメニュー */}
-        <div className="flex items-center space-x-8">
+        {/* ハンバーガーメニュー */}
+        <div className="md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-green-600 focus:outline-none"
+          >
+            <div className={`hamburger ${isOpen ? "open" : ""}`}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+        </div>
 
+        {/* ナビメニュー */}
+        <div className={`flex-col md:flex md:flex-row md:items-center md:space-x-8 ${isOpen ? "flex" : "hidden"}`}>
           <Link
             href="/overview"
-            className="text-lg font-semibold hover:border-b-2 hover:border-green-600 transition duration-300 pb-1 text-green-600"
+            className="text-lg font-semibold transition duration-300 pb-1 text-green-600"
           >
             選挙とは？
           </Link>
 
           <Link
             href="/candidates"
-            className="text-lg font-semibold hover:border-b-2 hover:border-green-600 transition duration-300 pb-1 text-green-600"
+            className="text-lg font-semibold transition duration-300 pb-1 text-green-600"
           >
             候補者一覧
           </Link>
 
           <Link
             href="https://drive.google.com/file/d/1UTIbJA8vp0z4_pXENxEnEYMmFaOkS9Ng/view?usp=sharing"
-            className="text-lg font-semibold hover:border-b-2 hover:border-green-600 transition duration-300 pb-1 text-green-600"
+            className="text-lg font-semibold transition duration-300 pb-1 text-green-600"
           >
-              中学生徒会役員選挙細則
+            <span className="hidden md:inline">中学生徒会役員選挙細則</span>
+            <span className="md:hidden">選挙細則</span>
           </Link>
-       </div>
+        </div>
       </nav>
+
+      <style jsx>{`
+        .hamburger {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          width: 24px;
+          height: 24px;
+          cursor: pointer;
+        }
+
+        .hamburger span {
+          display: block;
+          width: 100%;
+          height: 2px;
+          background-color: #38a169;
+          transition: all 0.3s ease-in-out;
+        }
+
+        .hamburger.open span:nth-child(1) {
+          transform: translateY(8px) rotate(45deg);
+        }
+
+        .hamburger.open span:nth-child(2) {
+          opacity: 0;
+        }
+
+        .hamburger.open span:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      `}</style>
     </header>
   );
 };
