@@ -4,8 +4,9 @@ const Results = () => {
       <h3 className="text-2xl font-bold text-green-600 mb-4 ml-[10%] text-left">結果公示</h3>
       <div className="space-y-4">
         <div className="border-b border-gray-300 pb-4">
-          <h4 className="text-xl font-semibold">選挙結果速報</h4>
-          <p>開票作業が終了するまで今しばらくお待ちください。</p>
+          <h4 className="text-xl font-semibold">選挙結果</h4><br />
+          <p>オンライン結果公示：2025年2月22日 12:00 (予定)</p>
+          <p>結果公示時間までしばらくお待ちください。</p>
         </div>
       </div>
     </div>

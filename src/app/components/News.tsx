@@ -10,10 +10,10 @@ const News = () => {
         </div></div>
       </div>
       <div className="pb-4">
-        <div className="flex justify-start mt-4">
+        {/* <div className="flex justify-start mt-4">
           <p className="mr-[10%] ml-[20%]">2024.2.14</p>
           <p>中学生徒会選挙2024特設サイト開設！</p>
-        </div>
+        </div> */}
       {/* 追加のニュース項目をここに追加できます */}
       </div>
     </div>

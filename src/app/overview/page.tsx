@@ -79,7 +79,7 @@ const Home = () => {
         </div>
         <div className="flex flex-col md:flex-row items-center -ml-32 justify-center">
           <Image
-        src="/vice-chair.webp"
+        src="/chair.webp"
         alt="副会長"
         width={200}
         height={200}
@@ -96,21 +96,23 @@ const Home = () => {
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center ml-32 justify-center">
-          <Image
-        src="/secretary.webp"
-        alt="書記"
-        width={200}
-        height={200}
-        className="mb-4 md:mb-0 md:mr-2"
-          />
-          <div className="bg-green-700 text-white font-bold py-4 px-6 flex flex-col items-center justify-center w-full md:w-[200px] h-[200px]">
-        <h2 className="text-2xl mb-2">書記</h2>
-        <button 
-          className="flex items-center justify-center bg-white text-green-700 rounded-full w-10 h-10 transition-transform duration-300 transform hover:scale-110"
-          onClick={() => handleClick('/secretary')}
-        >
-          <SlArrowRight className="text-2xl transition-transform duration-300 transform hover:translate-x-1" />
-        </button>
+          <div className="w-[200px] h-[200px] flex items-center justify-center">
+            <Image
+              src="/secretary.webp"
+              alt="書記"
+              width={170}
+              height={170}
+              className="mb-4 md:mb-0 md:mr-2"
+            />
+          </div>
+          <div className="bg-green-700 text-white font-bold py-4 px-6 flex ml-2 flex-col items-center justify-center w-full md:w-[200px] h-[200px]">
+            <h2 className="text-2xl mb-2">書記</h2>
+            <button 
+              className="flex items-center justify-center bg-white text-green-700 rounded-full w-10 h-10 transition-transform duration-300 transform hover:scale-110"
+              onClick={() => handleClick('/secretary')}
+            >
+              <SlArrowRight className="text-2xl transition-transform duration-300 transform hover:translate-x-1" />
+            </button>
           </div>
         </div>
         <div className="flex flex-col md:flex-row items-center -ml-32 justify-center">
