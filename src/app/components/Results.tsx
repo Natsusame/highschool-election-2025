@@ -5,7 +5,7 @@ const Results = () => {
       <div className="space-y-4">
         <div className="border-b border-gray-300 pb-4">
           <h4 className="text-xl font-semibold">選挙結果</h4><br />
-          <p>オンライン結果公示：2025年2月21日 20:00 (予定)</p><br />
+          <p>オンライン結果公示：2025年2月22日 8:00 (予定)</p><br />
           <p>結果公示時間までしばらくお待ちください。</p>
           <p>※開票の進み具合によって、結果公示が遅れる可能性があります。</p>
         </div>

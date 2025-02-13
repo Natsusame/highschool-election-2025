@@ -58,7 +58,7 @@ const candidates = [
     "club": "無所属",
     "committee": "無所属",
     "electionsWon": 0,
-    "slogan": "スローガン未設定",
+    "slogan": "",
     "statement": "私はこの学校生活でクラスの人達や担任の先生をはじめいろんな人に支えていただきました。そして、今度は私が支える側になりたいと思い立候補しました。生徒会とは生徒を代表しつつも、陰ながら支えていく仕事だとこの約2年間を通して感じました。ですから、私が書記になった暁には生徒会を支えつつ、学校全体も支えていきたいと思います。",
     "manifestoVideo": "https://drive.google.com/file/d/1Xlm_1uj-b1JdePSyGBdKzfs9rICHABQR/preview"
   },
@@ -142,7 +142,7 @@ const candidates = [
     "club": "無所属",
     "committee": "無所属",
     "electionsWon": 0,
-    "slogan": "スローガン未設定",
+    "slogan": "",
     "statement": "こんにちは。この度、生徒会書記に立候補しました、中学1年五組の髙橋祐希です。私が生徒会に入りたいと思った理由は2つあります。1つは、人脈を広げたいからです。生徒会役員になれば、学年を問わず、多くの人と交流できると考えました。もう一つは、広尾学園のことをもっと知ってもらいたいからです。書記の主な仕事は、生徒会誌の作成です。生徒会誌を通してクラスや部活をもっと知ってもらうことで、互いの親睦を深めることができると考えています。ぜひ、ご投票お願いします。",
     "manifestoVideo": "https://drive.google.com/file/d/19RoDGGj-WdsV0yw-AmtIw1IRrVOeAXFa/preview"
   }
