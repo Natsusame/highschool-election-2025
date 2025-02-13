@@ -81,7 +81,7 @@ const candidates = [
     "name": "瓜生妃花",
     "photo": "/./uryu.webp",
     "position": "副会長",
-    "course": "AGコース",
+    "course": "SGコース",
     "class": "M1-6",
     "club": "無所属",
     "committee": "無所属",

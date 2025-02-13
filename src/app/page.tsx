@@ -60,7 +60,7 @@ const Home = () => {
           <div className="flex justify-between mt-4">
             <div className="w-1/2">
               <h4 className="text-xl font-semibold">選挙運動開始日</h4>
-              <h4 className="text-4xl text-green-700 font-semibold">2月15日</h4>
+              <h4 className="text-4xl text-green-700 font-semibold">2月14日</h4>
             </div>
             <div className="w-1/2">
               <h4 className="text-xl font-semibold">選挙運動終了日</h4>

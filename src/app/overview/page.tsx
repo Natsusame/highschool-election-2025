@@ -22,24 +22,30 @@ const Home = () => {
           <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
           <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">選挙の仕組み</h2>
         </div>
-            <Image
-            src="/method.webp"
+        <div className="flex flex-col items-center mt-10">
+          <Image
+            src="/method1.webp"
             alt="Election process method 1"
             width={500}
             height={300}
-            className="mx-auto mb-4"
+            className="mb-4"
+          />
+          <div className="flex justify-center space-x-4 mt-4">
+            <Image
+              src="/method2.webp"
+              alt="Election process method 2"
+              width={500}
+              height={300}
+              className="mb-4"
             />
             <Image
-            src="/method2.webp"
-            alt="Election process method 2"
-            width={500}
-            height={300}
-            className="mx-auto mb-4"
+              src="/method3.webp"
+              alt="Election process method 3"
+              width={500}
+              height={300}
+              className="mb-4"
             />
-        <div className="bg-white p-6 text-center w-3/5 mx-auto mt-[5%</p>] mb-[5%]">
-          <p className="text-lg">
-            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-          </p>
+          </div>
         </div>
 
       {/* 役職紹介 */}
