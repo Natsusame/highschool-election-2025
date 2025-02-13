@@ -72,8 +72,8 @@ const Home = () => {
             <div className="bg-white p-6 text-center w-[30%] border-t-4 border-green-600">
             <h4 className="text-xl font-semibold">投開票日</h4>
             <h4 className="text-4xl text-green-700 font-semibold">2月21日</h4>
-            <h4 className="text-xl font-semibold mt-4">告示日</h4>
-            <h4 className="text-4xl text-green-700 font-semibold">2月25日</h4>
+            <h4 className="text-xl font-semibold mt-4">校内結果公示日</h4>
+            <h4 className="text-4xl text-green-700 font-semibold">2月22日</h4>
             </div>
           <div className="bg-white p-6 text-center w-[30%] border-t-4 border-green-600">
             <Timer />
