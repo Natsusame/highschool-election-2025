@@ -11,11 +11,10 @@ const candidates = [
   { id: 4, name: '尾崎芽羽', photo: '/./ozaki.webp', position: 'm3書記' },
   { id: 5, name: '亀甲愛奈', photo: '/./kikkou.webp', position: '副会長' },
   { id: 6, name: '瓜生妃花', photo: '/./uryu.webp', position: '副会長' },
-  { id: 7, name: '名畑政吾', photo: '/./nahata.webp', position: '副会長' },
-  { id: 8, name: '古瀬はるか', photo: '/./kose.webp', position: 'm2会計' },
-  { id: 9, name: '山田理貴', photo: '/./yamada.webp', position: 'm2会計' },
-  { id: 10, name: '保田朝陽', photo: '/./houda.webp', position: 'm2書記' },
-  { id: 11, name: '髙橋祐希', photo: '/./takahashi.webp', position: 'm2書記' },
+  { id: 7, name: '古瀬はるか', photo: '/./kose.webp', position: 'm2会計' },
+  { id: 8, name: '山田理貴', photo: '/./yamada.webp', position: 'm2会計' },
+  { id: 9, name: '保田朝陽', photo: '/./houda.webp', position: 'm2書記' },
+  { id: 10, name: '髙橋祐希', photo: '/./takahashi.webp', position: 'm2書記' },
   // 他の候補者データ
 ];
 

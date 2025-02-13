@@ -72,7 +72,7 @@ const candidates = [
     "club": "無所属",
     "committee": "無所属",
     "electionsWon": 0,
-    "slogan": "スローガン未設定",
+    "slogan": "",
     "statement": "こんにちは、副会長候補の亀甲愛奈です。私は、様々な仕事をされている生徒会の先輩方を見て、生徒会の仕事にやりがいがありそうだと感じ、学校を私なりにより良くしたいと思いました。そこで、会長を補佐する立場となる副会長であれば、私の強みである行動力を活かせると考え、副会長に立候補することを決めました。私が副会長になったら、「生徒会のやっていることをわかりやすくする」「全校生徒の意見を直接生徒会へ届ける方法を明確に提示する」という2つのことを柱に活動をしたいと考えています。あなたの一票で学校が変わります！ぜひ、応援をよろしくお願いします。",
     "manifestoVideo": "https://drive.google.com/file/d/1q_W14bAKsR9NAa-qA8jeYfDoCgw9cmhz/preview"
   },
@@ -92,20 +92,6 @@ const candidates = [
   },
   {
     "id": 7,
-    "name": "名畑政吾",
-    "photo": "/./nahata.webp",
-    "position": "副会長",
-    "course": "AGコース",
-    "class": "M1-6",
-    "club": "無所属",
-    "committee": "無所属",
-    "electionsWon": 0,
-    "slogan": "笑いあり、涙ありの学校に",
-    "statement": "皆さんこんにちは。この度、生徒会副会長に立候補します。1年6組の名畑政吾です。部活はバスケットボール部と英語ディベート部に所属しています。私は広尾学園を活発でみんなが協力できる学校にすることを目指しています。副会長になったら、笑顔のある学校にするために挨拶運動や意見箱をや意見箱を活用します。生徒全員が挨拶を徹底することで、生徒の繋がりを深め、意見箱で皆さんからアイデアを積極的に取り入れることができます。そして先輩方が築き上げた生徒会をより良くし、目標である笑顔の絶えない学校にする目標を達成したいです。皆様の清き一票をよろしくお願いします。",
-    "manifestoVideo": "https://drive.google.com/file/d/19RoDGGj-WdsV0yw-AmtIw1IRrVOeAXFa/preview"
-  },
-  {
-    "id": 8,
     "name": "古瀬はるか",
     "photo": "/./kose.webp",
     "position": "新中二会計",
@@ -119,7 +105,7 @@ const candidates = [
     "manifestoVideo": "https://drive.google.com/file/d/1dZaPrDgOhCsHNwvG0GOJAPN_ZST7hQhy/preview"
   },
   {
-    "id": 9,
+    "id": 8,
     "name": "山田理貴",
     "photo": "/./yamada.webp",
     "position": "新中一会計",
@@ -129,11 +115,11 @@ const candidates = [
     "committee": "無所属",
     "electionsWon": 0,
     "slogan": "自分たちの学校は自分たちで作る",
-    "statement": "スピーチ未設定",
+    "statement": "僕は今の広尾学園が大好きです。今はまだ、1年生で学校のことを十分よく分かっていませんが生徒会に入り、生徒会活動の中心から広尾学園のことをさらによく知り、よりよい学園生活を作りたいです。そのためには、多くの生徒たちの声を聞き、生徒会活動に取り入れることが重要だと思います。「自分達の学園は自分達で作る」ことができる生徒会活動を実現していきます。",
     "manifestoVideo": "https://drive.google.com/file/d/19RoDGGj-WdsV0yw-AmtIw1IRrVOeAXFa/preview"
   },
   {
-    "id": 10,
+    "id": 9,
     "name": "保田朝陽",
     "photo": "/./houda.webp",
     "position": "新中二書記",
@@ -147,7 +133,7 @@ const candidates = [
     "manifestoVideo": "https://drive.google.com/file/d/19RoDGGj-WdsV0yw-AmtIw1IRrVOeAXFa/preview"
   },
   {
-    "id": 11,
+    "id": 10,
     "name": "髙橋祐希",
     "photo": "/./takahashi.webp",
     "position": "新中二書記",
