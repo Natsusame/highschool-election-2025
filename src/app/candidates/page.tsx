@@ -48,7 +48,7 @@ const CandidatePage = () => {
           <h2 className="text-xl">選出役員数: {position === '会長' || position === '副会長' || position === 'm3会計' || position === 'm2会計' || position === 'm2書記' ? '1名' : '2名'}</h2>
         </div>
         {(position === '会長' || position === 'm3会計'|| position === 'm3書記') && (
-          <button className="flex items-center bg-red-700 text-white p-3 border-none rounded ml-0 md:ml-4 mt-4 md:mt-0">
+          <button className="flex items-center bg-blue-700 text-white p-3 border-none rounded ml-0 md:ml-4 mt-4 md:mt-0">
             <FaVoteYea className="mr-2" />
             信任投票
           </button>

@@ -27,7 +27,7 @@ const Home = () => {
         />
         <div className="absolute inset-0 flex items-center justify-center">
         <button 
-          className="bg-red-600 text-white font-bold py-3 px-6 h-12 shadow-md hover:shadow-lg transition duration-300 rounded-full mt-40 md:mt-96 flex items-center text-xs md:text-base"
+          className="bg-blue-600 text-white font-bold py-3 px-6 h-12 shadow-md hover:shadow-lg transition duration-300 rounded-full mt-40 md:mt-96 flex items-center text-xs md:text-base"
           onClick={() => handleClick('/overview')}
         >
           詳しくはこちら <SlArrowRight className="ml-2" />
