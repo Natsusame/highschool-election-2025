@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import Header from "../../components/Header";
 import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const candidates = [
   {
@@ -114,7 +115,7 @@ const candidates = [
     "supporters": "H1-8丸上璃十(2025年度広報部門幹部), H1-6堀内水月(2025年度広報部門幹部), H1-5池田悠之丞(2025年度食品部門幹部), H1-5藤田四葉(2025年度演出部門幹部)",
     "slogan": "全く新しい広尾学園へ、根底から覆す。",
     "statement": "みなさん、こんにちは！生徒会副会長に立候補しました、三宅柊平です。僕が副会長に立候補した理由は2つあります。1つは、生徒会への関心を高め、生徒との距離をより近づけたい。もう1つは、みなさんが感じる日常の小さな不便を解消したい。この二つを、生徒会で働く友人たちと実現したいと思ったからです。\n今の生徒は生徒会役員と距離があり、活動への関心も低いように感じます。\nそこで、生徒会の業務内容を見直し、生徒の意見を反映させる活動に積極的に力を入れられるようにします。そして、毎学期の終業式で、生徒会がその学期に活動した成果を発表し、生徒の皆さんから意見やアイデアを集めます。そうすることで生徒と生徒会をダイレクトに繋げ、生徒会に新風を吹かせたいと考えています。\nまた、小さな不便を解消するために、お昼の食堂の混雑解消に着手します。列の混雑を防ぐためにポールなどを置き、スムーズな移動を実現します。\n僕は昨年、選挙管理委員会の副委員長として、生徒会選挙の投票方法を大きく変えることを委員と共に実現しました。また、けやき祭の前夜祭では、e-sports大会の運営にも携わりました。行動力には自信があります。\n副会長として積極的に動き、生徒と距離が最も近い役員としてみなさんの意見を聞き入れ、生徒会と生徒の橋渡し役になります。\nこの1年間を皆さんとともにかけがえのない日々にしたいです。ご投票よろしくお願いします！",
-    "manifestoVideo": "https://drive.google.com/file/d/1Rsn2F6Y-HCShW4F2Lpdj-GWLYZccoIs8/view?usp=sharing"
+    "manifestoVideo": "/videos/H1 三宅.mp4"
   },
   {
     "id": 10,
@@ -126,7 +127,7 @@ const candidates = [
     "electionsWon": 0,
     "slogan": "初志貫徹",
     "statement": "副会長に立候補したダンス部に所属している数少ない男子の高校一年七組古川貫太です。私は学級委員を3回やり、この学校で過ごす生活の日々に不満を抱えてる人は沢山いることにきずきました。よく耳にするのが制服の話。日曜日を除いて週6回は着ないといけない制服、こんな毎日を過ごす服装に不満をもっていては学校生活を楽しんでるとは言い切れないでしょう。そこで、私は副会長になったら最初に制服改変、ネクタイに結べてきつさを調整できるものを選択肢として追加し、暑い時期にも楽にネクタイをつけられるようにします。女子にはネクタイとスカートの組み合わせも可能にし、制服の着方を増やします。また、学校行事も改善して、球技大会の実施や欅際の予算変更を行います。",
-    "manifestoVideo": "https://drive.google.com/file/d/1Rsn2F6Y-HCShW4F2Lpdj-GWLYZccoIs8/view?usp=sharing"
+    "manifestoVideo": "/videos/H1 古川.mp4"
   },
   {
     "id": 11,
@@ -152,7 +153,7 @@ const candidates = [
     "supporters": "H1-1 大迫里帆, H1-1 川崎真奈, H2-6 山辺馨子, H1-1 石原沙彩",
     "slogan": "楽しい学園生活を!!",
     "statement": "私は生徒がもっと楽しいと感じる学校生活にしたいと思い、生徒会に立候補しました。中学3年間を通してたくさんのことを学び楽しい思い出も多く作りましたが、その中で「もっとこうしたい！！」と感じることがあり、自分から行動を起こそうと思いました。私は学校の行事やイベントが好きです。中でもスポーツフェスティバルは団結力や学年を超えた交流ができる大切な場なのでさらに盛り上げたいと思っています。たとえば、クラスTシャツをクラスごとで自由にデザインすることを学校に働きかけます。クラスカラーが何年も被ってしまってもデザインが変われば記憶も鮮明に残るでしょう。他にも、これまでの広尾学園の伝統や歴史を大切にしながら、私たち生徒が今やりたいと思う新しいアイディアをどんどん取り入れ、より楽しく、より居心地のよい学校生活のために貢献し、みんなで青春したいです！！",
-    "manifestoVideo": "https://drive.google.com/file/d/1Gp9xQj_f3eQ9nhC9ccKl4Fwbu4rF2qdr/view?usp=sharing"
+    "manifestoVideo": "/videos/H1 臼田.mp4"
   },
   {
     "id": 13,
@@ -204,7 +205,7 @@ const candidates = [
     "supporters": "H3-8 岩田純麗(2024年度広報部門長), H3-8 李穎多(2024年度装飾部門長)",
     "slogan": "もっと話そう。もっと動こう。",
     "statement": "こんにちは！書記立候補の市瀬由宇です。中学三年生の時に生徒会書記を一年間務めさせていただきました。活動として一番心に残っているのはけやき祭です。生徒会の皆さんと一生懸命に「どうやって、けやき祭をもっと楽しくできるか」を考えた日々は大変であると同時に、学びも多かったです。\n一方で、「もっとできたのでは？」という思いもあります。複数の準備を同時並行で行う中では、チームワークが欠かせません。実際に、いつでも先輩や後輩に声をかけてもらって、アドバイスをもらったりあげたりして、次に進めたことは大変ありがたかったです。\n高校ではその体験を生かし、生徒会内でのコミュニケーションをさらに円滑にしていきたいと思います。進捗の見える化や、定期的な課題の共有の場を設定して、時間がかかっている作業を手が空いている人がサポートできる環境を作り、生徒会やけやき祭の通営に貢献したいと考えています。\n高校１年８組の市瀬由宇に清き一票をよろしくお願いいたします！",
-    "manifestoVideo": "https://drive.google.com/file/d/1HWXI5kk4-PgRExSqb004eAMFxMCVixd0/view?usp=sharing"
+    "manifestoVideo": "/videos/H1 市瀬.mp4"
   },
   {
     "id": 17,
@@ -282,7 +283,7 @@ const CandidateDetail = () => {
   }, [id]);
 
   if (!candidate) {
-    return <div>立候補者ページが見つかりませんでした。</div>;
+    return <div>ページが見つかりませんでした。</div>;
   }
 
   // manifestVideoが"/未提出.webp"の場合は画像、それ以外はiframe
@@ -297,11 +298,11 @@ const CandidateDetail = () => {
       );
     } else {
       return (
-        <iframe
+        <video
           src={candidate.manifestoVideo}
           className="w-full h-64 md:h-96 border rounded-lg"
-          allowFullScreen
-        ></iframe>
+          controls
+        ></video>
       );
     }
   };
@@ -349,7 +350,7 @@ const CandidateDetail = () => {
 
         <div className="mt-6">
           <div className="flex items-center w-full mb-4">
-            <div className="bg-green-700 text-white font-bold py-1 px-4 relative inline-block align-middle flex justify-center items-center">
+            <div className="bg-green-700 text-white font-bold py-1 px-4 relative align-middle flex justify-center items-center">
               <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
               <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">所信表明</h2>
             </div>
@@ -359,7 +360,7 @@ const CandidateDetail = () => {
 
         <div className="mt-6">
           <div className="flex items-center w-full mb-4">
-            <div className="bg-green-700 text-white font-bold py-1 px-4 relative inline-block align-middle flex justify-center items-center">
+            <div className="bg-green-700 text-white font-bold py-1 px-4 relative align-middle flex justify-center items-center">
               <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2 h-full"></div>
               <h2 className="text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-3">政見放送</h2>
             </div>
