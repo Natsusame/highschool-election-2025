@@ -5,16 +5,25 @@ import { FaVoteYea, FaChevronRight, FaInfoCircle } from 'react-icons/fa';
 import Link from 'next/link';
 
 const candidates = [
-  { id: 1, name: '上田怜', photo: '/./ueda.webp', position: '会長' },
-  { id: 2, name: '松本椿', photo: '/./tsubaki.webp', position: 'm3会計' },
-  { id: 3, name: '鹿郷浬央', photo: '/./kakyou.webp', position: 'm3書記' },
-  { id: 4, name: '尾崎芽羽', photo: '/./ozaki.webp', position: 'm3書記' },
-  { id: 5, name: '亀甲愛奈', photo: '/./kikkou.webp', position: '副会長' },
-  { id: 6, name: '瓜生妃花', photo: '/./uryu.webp', position: '副会長' },
-  { id: 7, name: '古瀬はるか', photo: '/./kose.webp', position: 'm2会計' },
-  { id: 8, name: '山田理貴', photo: '/./yamada.webp', position: 'm2会計' },
-  { id: 9, name: '保田朝陽', photo: '/./houda.webp', position: 'm2書記' },
-  { id: 10, name: '髙橋祐希', photo: '/./takahashi.webp', position: 'm2書記' },
+  { id: 1, name: '山藤緑夏', photo: '/./会長_山藤.webp', position: '会長' },
+  { id: 2, name: '須賀凪紗', photo: '/./H2副会長_須賀.webp', position: 'h2副会長' },
+  { id: 3, name: '加藤清之介', photo: '/./H2副会長_加藤.webp', position: 'h2副会長' },
+  { id: 4, name: '東田歩真', photo: '/./H2書記_東田.webp', position: 'h2書記' },
+  { id: 5, name: '松澤あさと', photo: '/./H2書記_松澤.webp', position: 'h2書紀' },
+  { id: 6, name: '山辺馨子', photo: '/./H2会計_山辺.webp', position: 'h2会計' },
+  { id: 7, name: '山口泰', photo: '/./H2会計_山口.webp', position: 'h2会計' },
+  { id: 8, name: '尾崎太郎', photo: '/./H1副会長_尾崎.webp', position: 'h1副会長' },
+  { id: 9, name: '三宅柊平', photo: '/./H1副会長_三宅.webp', position: 'h1副会長' },
+  { id: 10, name: '古川貫太', photo: '/./H1副会長_古川.webp', position: 'h1副会長' },
+  { id: 11, name: '1', photo: '/./H1副会長_海老原.webp', position: 'h1副会長' },
+  { id: 12, name: '臼田奈緒', photo: '/./H1副会長_臼田.webp', position: 'h1副会長' },
+  { id: 13, name: '伴亜理沙', photo: '/./H1書記_伴.webp', position: 'h1書記' },
+  { id: 14, name: '梅景優那', photo: '/./H1書記_梅景.webp', position: 'h1書記' },
+  { id: 15, name: '早乙女千尋', photo: '/./H1書記_早乙女.webp', position: 'h1書記' },
+  { id: 16, name: '市瀬由宇', photo: '/./H1書記_市瀬.webp', position: 'h1書記' },
+  { id: 17, name: '宮本朱理', photo: '/./H1書記_宮本.webp', position: 'h1書記' },
+  { id: 18, name: '酒巻仁', photo: '/./H1会計_酒巻.webp', position: 'h1会計' },
+  { id: 19, name: ' 花田純之介', photo: '/./H1会計_花田.webp', position: 'h1会計' },
   // 他の候補者データ
 ];
 
@@ -47,7 +56,7 @@ const CandidatePage = () => {
         <div className="text-black font-bold ml-0 md:ml-4 mt-4 md:mt-0">
           <h2 className="text-xl">選出役員数: {position === '会長' || position === '副会長' || position === 'm3会計' || position === 'm2会計' || position === 'm2書記' ? '1名' : '2名'}</h2>
         </div>
-        {(position === '会長' || position === 'm3会計'|| position === 'm3書記') && (
+        {(position === '会長' || position=== 'h2会計') && (
           <button className="flex items-center bg-blue-700 text-white p-3 border-none rounded ml-0 md:ml-4 mt-4 md:mt-0">
             <FaVoteYea className="mr-2" />
             信任投票
@@ -100,12 +109,13 @@ const CandidatePage = () => {
         </p>
       </div>
 
-      {renderSection('会長', '会長立候補者(新中三)')}
-      {renderSection('副会長', '副会長立候補者(新中二)')}
-      {renderSection('m3会計', '会計立候補者(新中三)')}
-      {renderSection('m2会計', '会計立候補者(新中二)')}
-      {renderSection('m3書記', '書記立候補者(新中三)')}
-      {renderSection('m2書記', '書記立候補者(新中二)')}
+      {renderSection('会長', '会長立候補者')}
+      {renderSection('h2副会長', '副会長立候補者(高二)')}
+      {renderSection('h1副会長', '副会長立候補者(高一)')}
+      {renderSection('h2会計', '会計立候補者(高二)')}
+      {renderSection('h1会計', '会計立候補者(高一)')}
+      {renderSection('h2書記', '書記立候補者(高二)')}
+      {renderSection('h1書記', '書記立候補者(高一)')}
     </div>
   );
 };
