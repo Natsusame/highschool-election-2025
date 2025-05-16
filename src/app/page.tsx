@@ -19,7 +19,7 @@ const Home = () => {
       <Header />
       <div className="relative">
         <Image
-          src="/header-image.webp"
+          src="/header-image-2025.png"
           alt="Header Background"
           width={1920} 
           height={600}
@@ -50,30 +50,30 @@ const Home = () => {
           <div className="flex flex-col md:flex-row justify-between">
             <div className="w-full md:w-1/2 mb-4 md:mb-0">
               <h4 className="text-xl font-semibold">立候補受付開始日</h4>
-              <h4 className="text-4xl text-green-700 font-semibold">11月11日</h4>
+              <h4 className="text-4xl text-green-700 font-semibold">4月22日</h4>
             </div>
             <div className="w-full md:w-1/2">
               <h4 className="text-xl font-semibold">立候補受付締め切り日</h4>
-              <h4 className="text-4xl text-green-700 font-semibold">12月02日</h4>
+              <h4 className="text-4xl text-green-700 font-semibold">5月01日</h4>
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between mt-4">
             <div className="w-full md:w-1/2 mb-4 md:mb-0">
               <h4 className="text-xl font-semibold">選挙運動開始日</h4>
-              <h4 className="text-4xl text-green-700 font-semibold">2月14日</h4>
+              <h4 className="text-4xl text-green-700 font-semibold">5月12日</h4>
             </div>
             <div className="w-full md:w-1/2">
               <h4 className="text-xl font-semibold">選挙運動終了日</h4>
-              <h4 className="text-4xl text-green-700 font-semibold">2月21日</h4>
+              <h4 className="text-4xl text-green-700 font-semibold">5月19日</h4>
             </div>
           </div>
         </div>
         <div className="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4 mt-[2%] mb-[10%]">
           <div className="bg-white p-6 text-center w-full md:w-[30%] border-t-4 border-green-600">
             <h4 className="text-xl font-semibold">投開票日</h4>
-            <h4 className="text-4xl text-green-700 font-semibold">2月21日</h4>
+            <h4 className="text-4xl text-green-700 font-semibold">5月20日</h4>
             <h4 className="text-xl font-semibold mt-4">校内結果公示日</h4>
-            <h4 className="text-4xl text-green-700 font-semibold">2月22日</h4>
+            <h4 className="text-4xl text-green-700 font-semibold">5月21日</h4>
           </div>
           <div className="bg-white p-6 text-center w-full md:w-[30%] border-t-4 border-green-600">
             <Timer />

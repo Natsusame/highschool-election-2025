@@ -16,7 +16,7 @@ const Header = () => {
         {/* ロゴ */}
         <Link href="/" className="text-3xl font-bold text-green-600">
           <Image
-            src="/2024-election.webp"
+            src="/2025-election-highschool.png"
             alt="Header Logo"
             width={200}
             height={300}
@@ -58,7 +58,7 @@ const Header = () => {
             href="https://drive.google.com/file/d/1UTIbJA8vp0z4_pXENxEnEYMmFaOkS9Ng/view?usp=sharing"
             className="text-lg font-semibold transition duration-300 pb-1 text-green-600"
           >
-            <span className="hidden md:inline">中学生徒会役員選挙細則</span>
+            <span className="hidden md:inline">高校生徒会役員選挙細則</span>
             <span className="md:hidden">選挙細則</span>
           </Link>
         </div>

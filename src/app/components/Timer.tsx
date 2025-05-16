@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 const calculateTimeLeft = () => {
-  const targetDate = new Date("2025-02-21T13:30:00");
+  const targetDate = new Date("2025-05-20T13:30:00");
   const difference = +targetDate - +new Date();
   let timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
 
