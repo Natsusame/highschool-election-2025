@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Timer from "./components/Timer";
 import Image from "next/image";
 import News from "./components/News";
-import Results from "./components/Results";
+//import Results from "./components/Results";
 import { SlArrowRight } from "react-icons/sl";
 import { useRouter } from 'next/navigation';
 
