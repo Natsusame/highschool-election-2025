@@ -4,7 +4,6 @@ import { useParams } from "next/navigation";
 import Header from "../../components/Header";
 import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
-import Image from "next/image";
 
 const candidates = [
   {

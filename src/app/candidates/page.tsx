@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Header from "../components/Header";
 import { FaVoteYea, FaChevronRight, FaInfoCircle } from 'react-icons/fa';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const candidates = [
   { id: 1, name: '山藤緑夏', photo: '/./会長_山藤.webp', position: '会長' },
