@@ -54,13 +54,6 @@ const Header = () => {
             候補者一覧
           </Link>
 
-          <Link
-            href="https://drive.google.com/file/d/1UTIbJA8vp0z4_pXENxEnEYMmFaOkS9Ng/view?usp=sharing"
-            className="text-lg font-semibold transition duration-300 pb-1 text-green-600"
-          >
-            <span className="hidden md:inline">高校生徒会役員選挙細則</span>
-            <span className="md:hidden">選挙細則</span>
-          </Link>
         </div>
       </nav>
 
