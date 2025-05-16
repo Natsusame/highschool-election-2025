@@ -44,7 +44,7 @@ const Header = () => {
             href="/overview"
             className="text-lg font-semibold transition duration-300 pb-1 text-green-600"
           >
-            選挙とは？
+            役職紹介
           </Link>
 
           <Link

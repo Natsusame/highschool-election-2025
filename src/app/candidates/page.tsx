@@ -9,13 +9,13 @@ const candidates = [
   { id: 2, name: '須賀凪紗', photo: '/./H2副会長_須賀.webp', position: 'h2副会長' },
   { id: 3, name: '加藤清之介', photo: '/./H2副会長_加藤.webp', position: 'h2副会長' },
   { id: 4, name: '東田歩真', photo: '/./H2書記_東田.webp', position: 'h2書記' },
-  { id: 5, name: '松澤あさと', photo: '/./H2書記_松澤.webp', position: 'h2書紀' },
+  { id: 5, name: '松澤あさと', photo: '/./H2書記_松澤.webp', position: 'h2書記' },
   { id: 6, name: '山辺馨子', photo: '/./H2会計_山辺.webp', position: 'h2会計' },
   { id: 7, name: '山口泰', photo: '/./H2会計_山口.webp', position: 'h2会計' },
   { id: 8, name: '尾崎太郎', photo: '/./H1副会長_尾崎.webp', position: 'h1副会長' },
   { id: 9, name: '三宅柊平', photo: '/./H1副会長_三宅.webp', position: 'h1副会長' },
   { id: 10, name: '古川貫太', photo: '/./H1副会長_古川.webp', position: 'h1副会長' },
-  { id: 11, name: '1', photo: '/./H1副会長_海老原.webp', position: 'h1副会長' },
+  { id: 11, name: '海老原和虎', photo: '/./H1副会長_海老原.webp', position: 'h1副会長' },
   { id: 12, name: '臼田奈緒', photo: '/./H1副会長_臼田.webp', position: 'h1副会長' },
   { id: 13, name: '伴亜理沙', photo: '/./H1書記_伴.webp', position: 'h1書記' },
   { id: 14, name: '梅景優那', photo: '/./H1書記_梅景.webp', position: 'h1書記' },
@@ -54,9 +54,11 @@ const CandidatePage = () => {
           <h2 className="text-xl md:text-3xl ml-6 mb-2 inline-block align-middle mt-2 mr-4">{title}</h2>
         </div>
         <div className="text-black font-bold ml-0 md:ml-4 mt-4 md:mt-0">
-          <h2 className="text-xl">選出役員数: {position === '会長' || position === '副会長' || position === 'h2会計' || position === 'h1会計' || position === 'h2書記' || position === 'h1書記' ? '1名' : '2名'}</h2>
+            <h2 className="text-xl">
+              選出役員数: {position === '会長' || position === 'h2副会長' || position === 'h1副会長' ? '1名' : position === 'h2書記' || position === 'h1書記' ? '2名' : position === 'h2会計' || position === 'h1会計' ? '2名' : ''}
+            </h2>
         </div>
-        {(position === '会長' || position=== 'h2会計' || position=== 'h1会計' || position=== 'h2会計') && (
+        {(position === '会長' || position=== 'h2会計' || position=== 'h1会計' || position=== 'h2書記') && (
           <button className="flex items-center bg-blue-700 text-white p-3 border-none rounded ml-0 md:ml-4 mt-4 md:mt-0">
             <FaVoteYea className="mr-2" />
             信任投票

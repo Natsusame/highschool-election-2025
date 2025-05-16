@@ -37,10 +37,9 @@ const Home = () => {
       <main className="p-4">
         {/* ニュースセクション */}
         <News />
-
         {/* 結果公示セクション */}
-        <Results />
-        
+        {/*<Results />*/}
+       
         {/* カウントダウン */}
         <div className="bg-green-700 w-full md:w-[14%] text-white font-bold py-2 px-4 h-12 relative ml-0 md:ml-[10%]">
           <div className="absolute left-0 top-0 bottom-0 bg-white ml-1 mr-5 w-2"></div>
