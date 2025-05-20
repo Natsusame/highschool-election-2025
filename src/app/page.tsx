@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Timer from "./components/Timer";
 import Image from "next/image";
 import News from "./components/News";
-//import Results from "./components/Results";
+import Results from "./components/Results";
 import { SlArrowRight } from "react-icons/sl";
 import { useRouter } from 'next/navigation';
 
@@ -38,7 +38,7 @@ const Home = () => {
         {/* ニュースセクション */}
         <News />
         {/* 結果公示セクション */}
-        {/*<Results />*/}
+    <Results />
        
         {/* カウントダウン */}
         <div className="bg-green-700 w-full md:w-[14%] text-white font-bold py-2 px-4 h-12 relative ml-0 md:ml-[10%]">
