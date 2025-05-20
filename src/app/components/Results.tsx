@@ -7,7 +7,7 @@ const Results = () => {
       <div className="border-b border-gray-300 pb-4">
   <h4 className="text-xl font-semibold text-green-600">選挙結果情報</h4><br />
   <Image
-    src="/waiting.webp"
+    src="/results.webp"
     alt="選挙結果"
     className="mx-auto w-3/5"
     width={400}
